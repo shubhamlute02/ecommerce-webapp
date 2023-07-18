@@ -6,37 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="./images/logo.png" type="image/svg+xml">
+    <link rel="shortcut icon" href="./images/logo02.png" type="image/svg+xml">
 
     <!-- import the CSS file in HTML -->
     <link rel="stylesheet" href="style.css">
 
     <!--Icon font link-->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <title>DeKodex-Shop Web Desing Full Website</title>
+    <title>Nike Shop</title>
 </head>
 
 <body>
 
     <!--Header Section Start -->
     <section id="header" class="header">
-        <a href="#" class="logo"><i class="fas fa-shop"></i> DeKodex-Shop</a>
+        <a href="#" class="logo"><img src="images/logo02.png" class="nike-logo"></img> Shoes Store</a>
 
         <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
             <a href="#category">Category</a>
-            <a href="#shop">Shop</a>
+            <a href="#product">product</a>
+            <a href="#contact">Contact</a>
+            <a onClick="location.href='about.html'">About</a>
 
         </nav>
-        <div class="icons">
+        <div class="icons sum-prices">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a onClick="location.href='../components/login.html'" class="fas fa-user"></a>
 
+            <a class="fas fa-shopping-cart shoppingCartButton"></a>
+            <a id="sum-prices"></a>
+
+        </div>
+
+        <!-- productonCart-->
+        <div class="producstOnCart hide">
+            <div class="overlay"></div>
+            <div class="top">
+                <button id="closeButton">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+                <h2>Cart</h2>
+            </div>
+            <ul id="buyItems">
+                <h4 class="empty">Your shopping cart is empty</h4>
+
+            </ul>
+            <!-- <button class="btn checkout hidden">Check out</button> -->
+            <input type=button onClick="location.href='../components/payment.html'" class="btn checkout hidden"
+                value='click here'>
         </div>
 
     </section>
@@ -49,7 +68,7 @@
             style="background: url(./images/herobg5.jpg) no-repeat; background-size: cover; background-position: center;">
             <div class="content">
                 <span>Pick the perfect pair</span>
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae repellendus</h3>
+                <h3>A SPRINGY RIDE FOR EVERY RUN Back in its fourth decade, the Pegasus 40 is springier than ever with a more cushioned, personalized fit.<us/h3>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -58,7 +77,7 @@
             style="background: url(./images/herobg2.jpg) no-repeat; background-size: cover; background-position: center;">
             <div class="content">
                 <span>Exclusive Sport Shoes</span>
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
+                <h3>TATUM 1 'ST. LOUIS" Jayson Tatum is repping his hometown with style as he rises in the game. </h3>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -67,7 +86,7 @@
             style="background: url(./images/herobg3.jpg) no-repeat; background-size: cover; background-position: center;">
             <div class="content">
                 <span>Smart & Sporty</span>
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod recusandae </h3>
+                <h3>ON COURT. FAST Putting on these go-to basketball shoes just got easier. </h3>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -79,31 +98,31 @@
 
     <!--caregory section start-->
     <section class="category" id="category">
-        <h1 class="heading">Product<span> Pramotion</span></h1>
+        <h1 class="heading">Product<span> Promotion</span></h1>
         <div class="box-container">
             <a href="#" class="box">
                 <img src="./images/product-1.jpg">
-                <h3>Product 1</h3>
+                <h3>Nike Air Force</h3>
             </a>
             <a href="#" class="box">
                 <img src="./images/product-2.jpg">
-                <h3>Product 2</h3>
+                <h3>Nike Air Max SC</h3>
             </a>
             <a href="#" class="box">
                 <img src="./images/product-3.jpg">
-                <h3>Product 3</h3>
+                <h3>Nike Gripknit Phantom</h3>
             </a>
             <a href="#" class="box">
                 <img src="./images/product-4.jpg">
-                <h3>Product 4</h3>
+                <h3>Nike Revolution 6</h3>
             </a>
             <a href="#" class="box">
                 <img src="./images/product-5.jpg">
-                <h3>Product 5</h3>
+                <h3>Nike Dunk Low</h3>
             </a>
             <a href="#" class="box">
                 <img src="./images/product-6.jpg">
-                <h3>Product 6</h3>
+                <h3>Air Jordan Low</h3>
             </a>
         </div>
     </section>
@@ -117,11 +136,11 @@
                 <a href="#" class="btn">Explore More<i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="collection-card" style="background-image:url(./images/collection-2.jpg)">
-                <h1>Sport Collection</h1>
+                <h1>Lifestyle Shoes</h1>
                 <a href="#" class="btn">Explore More<i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="collection-card" style="background-image:url(./images/collection-3.jpg)">
-                <h1>Sport Collection</h1>
+                <h1>Football Collection</h1>
                 <a href="#" class="btn">Explore More<i class="fas fa-arrow-right"></i></a>
             </div>
 
@@ -129,138 +148,179 @@
     </section>
     <!-- pramotion section ends-->
 
-
-    <!-- shop section ends-->
-    <section class="shop" id="shop">
-        <h1 class="heading">Our<span> Shop</span></h1>
-        <div class="box-container">
-
-            <div class="box">
-                <div class="img">
-                    <img src="./images/1.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
+    <!-- product section starts-->
+    <section id="product">
+        <div class="pop-Shoes">
+            <h1 class="heading">Nike<span> Products</span></h1>
+            <div class="pop-Shoes-2">
+                <ul class="products">
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-1.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="5">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 1</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">1099</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-2.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="6">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 2</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">999</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-3.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="7">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 3</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">800</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-4.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="8">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 4</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">599</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-5.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="9">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 5</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">850</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-6.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="10">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 6</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">769</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-7.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="9">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 7</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">850</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="images/product-8.jpg" alt="popular Shoes" />
+                                <div class="product-over">
+                                    <button class="btn btn-small addToCart" data-product-id="9">
+                                        <i class="fas fa-cart-plus"></i>Add to cart
+                                    </button>
+                                    <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">Nike Air 8</h4>
+                                <span class="stars"></span>
+                                <h4 class="price">
+                                    $<span class="priceValue">850</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./images/2.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./images/3.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./images/4.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./images/product-1.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./images/product-4.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./images/product-2.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <img src="./images/product-3.jpg">
-                    <div class="icons">
-                        <a href="#" class="fas fa-eye"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Nike AIR</h3>
-                    <div class="price">$40<span> $150.99</span></div>
-                    <a href="#" class="btn">Add to Cart</a>
-                </div>
-            </div>
-            
-
         </div>
-
     </section>
-    <!--Shop section ends-->
+
+    <!--product section ends-->
+
 
     <!-- Services section starts-->
     <section class="section services">
@@ -325,49 +385,57 @@
         <ul class="insta-post-list has-scrollbar">
 
             <li class="insta-post-item">
-                <img src="./images/insta-1.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-1.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
             <li class="insta-post-item">
-                <img src="./images/insta-2.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-2.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
             <li class="insta-post-item">
-                <img src="./images/insta-3.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-3.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
             <li class="insta-post-item">
-                <img src="./images/insta-4.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-4.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
             <li class="insta-post-item">
-                <img src="./images/insta-5.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-5.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
             <li class="insta-post-item">
-                <img src="./images/insta-6.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-6.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
             <li class="insta-post-item">
-                <img src="./images/insta-7.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-7.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
             <li class="insta-post-item">
-                <img src="./images/insta-8.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100" loading="lazy">
+                <img src="./images/insta-8.jpg" class="insta-post-banner image-contain" alt="" width="100" height="100"
+                    loading="lazy">
                 <a href="#" class="insta-post-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
@@ -383,7 +451,7 @@
     <section class="footer" id="contact">
         <div class="logo">
             <a href="#home">
-                <img src="./images/weblogo.png" alt="logo" width="220" height="70">
+                <img src="./images/lgo01.png" alt="logo" width="220" height="70">
             </a>
         </div>
         <div class="box-container">
@@ -392,25 +460,25 @@
                 <h3>Quick Links</h3>
                 <a href="#home" class="link"><i class="fas fa-angle-right"></i>Home</a>
                 <a href="#about" class="link"><i class="fas fa-angle-right"></i>about</a>
-                <a href="#shop" class="link"><i class="fas fa-angle-right"></i>shop</a>
+                <a href="#product" class="link"><i class="fas fa-angle-right"></i>product</a>
                 <a href="#category" class="link"><i class="fas fa-angle-right"></i>category</a>
             </div>
-            
+
             <div class="box">
                 <h3>My Favorite</h3>
                 <a href="#" class="link"><i class="fas fa-angle-right"></i>My Favorite</a>
                 <a href="#" class="link"><i class="fas fa-angle-right"></i>My orders</a>
                 <a href="#" class="link"><i class="fas fa-angle-right"></i>My Wishlists</a>
                 <a href="#" class="link"><i class="fas fa-angle-right"></i>privacy policy</a>
-                
+
             </div>
-            
+
             <div class="box">
                 <h3>Contact Details</h3>
                 <a href="#" class="link"><i class="fas fa-phone"></i>+111-222-333</a>
                 <a href="#" class="link"><i class="fas fa-phone"></i>+111-222-333</a>
-                <a href="#" class="link"><i class="fas fa-envelope"></i>dekodex@gmail.com</a>
-                <a href="#" class="link"><i class="fas fa-map"></i>mumbai,India - 401204</a>
+                <a href="#" class="link"><i class="fas fa-envelope"></i>Vishwaso810@gmail.com</a>
+                <a href="#" class="link"><i class="fas fa-map"></i>Brampton, ON L6R 1X7</a>
                 <div class="share">
                     <a href="" class="fab fa-facebook-f"></a>
                     <a href="" class="fab fa-twitter"></a>
@@ -427,10 +495,10 @@
                     <input class="btn" value="Subscribe" type="submit">
                 </form>
             </div>
-            
+
         </div>
-        <div class="credit">Designed by <span>DeKodex</span>|| all rights reserved.</div>
-        
+        <div class="credit">Designed by <span>Vishwas</span>|| all rights reserved. 2023</div>
+
 
     </section>
 
@@ -439,6 +507,7 @@
 
     <!--link of javascript file-->
     <script src="app.js"></script>
+    <script src="/components/cart.js"></script>
 </body>
 
 </html>
