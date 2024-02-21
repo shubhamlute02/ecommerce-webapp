@@ -3,7 +3,7 @@
 ### HTML CSS and JavaScript to Create a Fully Responsive Ecommerce Web App👉
 
 <h1 align="left">Preview Just Click on Link </h1>
-- 🔗 https://shubhamlute02.github.io/ecommerce-webapp/
+- 🔗 https://shubhamlute02.github.io/Nike_Shop/
 
 #### LEARN HOW TO BUILD FULL RESPONSIVE ECOMMERCE WEBSITE USING HTML CSS & JAVASCRIPT. This is a free HTML CSS Course. And in this course we will learn how to build a full ecommerce website completely from scratch step by step. Will Create from responsive navbar using html CSS JavaScript to responsive footer in one video.
 ![LEARN HOW TO BUILD FULL RESPONSIVE ECOMMERCE WEBSITE USING HTML CSS & JAVASCRIPT. This is a free HTML CSS Course. And in this course we will learn how to build a full ecommerce website completely from scratch step by step. Will Create from responsive navbar using html CSS JavaScript to responsive footer in one video.](https://github.com/shubhamlute02/ecommerce-webapp/blob/main/designpromo/1.png)
